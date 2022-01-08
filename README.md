@@ -1,2 +1,2 @@
 # calculator
-Calculator Project
+Calculator Project v1.0
