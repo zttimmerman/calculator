@@ -45,7 +45,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: auto;
-    background-color: grey;
+    background-color: #607385;
     font-size: 1.3rem;
     height: 5rem;
     width: 20rem;
@@ -55,9 +55,19 @@ header {
     background-color: white;
 }
 
+#add, #subtract, #multiply, #divide {
+    background-color: #318dda;
+    color: white;
+}
+
 .calc-buttons button:hover {
     background-color: black;
     color: white;
+}
+
+#add:hover, #subtract:hover, #multiply:hover, #divide:hover {
+    background-color: white;
+    color: #318dda;
 }
 
 #clear {

@@ -52,7 +52,7 @@ addBtn.addEventListener("click", takeOperator);
 subtractBtn.addEventListener("click", takeOperator);
 multiplyBtn.addEventListener("click", takeOperator);
 divideBtn.addEventListener("click", takeOperator);
-decimalBtn.addEventListener("click", showNumber);
+decimalBtn.addEventListener("click", takeDecimal);
 clearBtn.addEventListener("click", clearDisplay);
 equalsBtn.addEventListener("click", evaluate);
 
@@ -86,6 +86,17 @@ function takeOperator(e) {
     } 
     calcArr[2] = e.target.id;
     displayValue = "";
+}
+
+function takeDecimal(e) {
+    if (display.textContent.includes(".")) return
+    displayValue += ".";
+    display.textContent = displayValue;
+    if (!calcArr[2]) {
+        calcArr[0] += ".";
+    } else {
+        calcArr[1] += ".";
+    }
 }
 
 function clearDisplay(e) {
